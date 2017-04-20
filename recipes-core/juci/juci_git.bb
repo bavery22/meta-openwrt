@@ -16,7 +16,8 @@ S = "${WORKDIR}/git"
 inherit npm-install
 
 NPM_INSTALL_append = " uglify-js"
-DEPENDS += "jucid lua5.1 grunt-cli-native"
+#DEPENDS += "jucid lua5.1 grunt-cli-native"
+DEPENDS += "jucid lua5.1 "
 
 do_compile() {
 	oe_runmake node_modules
