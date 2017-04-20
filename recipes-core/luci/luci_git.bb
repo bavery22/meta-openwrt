@@ -6,7 +6,7 @@ HOMEPAGE = "https://github.com/openwrt/luci"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=2b42edef8fa55315f34f2370b4715ca9"
 SECTION = "base"
-DEPENDS = "json-c libubox libnl lua5.1 iwinfo"
+DEPENDS = "json-c libubox libnl lua5.1 iwinfo openssl"
 RDEPENDS_${PN} = "lua5.1"
 
 SRCREV = "d89b022b97b4516bef708212135780b818b9d4a2"
@@ -24,4 +24,3 @@ OECMAKE_C_FLAGS += "-I${STAGING_INCDIR}/libnl3"
 FILES_${PN} += "/www /usr/lib"
 
 S = "${WORKDIR}/git/"
-
